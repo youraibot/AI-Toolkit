@@ -345,7 +345,6 @@ Welcome to Awesome AI Tools! Dive into my curated list of AI list, featuring top
 
 # Awesome ChatGPT List
 
-- 
 ### Official OpenAI GPT General Resources
 
 - [ChatGPT Official App](https://chat.openai.com)
