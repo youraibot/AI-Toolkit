@@ -11,17 +11,6 @@ AI ToolKit's Site: [https://aitoolkit.cc](https://aitoolkit.cc)
 
 Welcome to Awesome AI Tools! Dive into my curated list of AI list, featuring top generative ai tools and LLMs. Eager to contribute or feature your product? Send a PR to this repo—it's free! Join my growing AI list of products and stay on the edge of innovation.
 
-## Contents
-
-- [📝 AI Text](#text)
-- [👩‍💻 Code with AI](#code)
-- [🖼️ Generative AI Images ](#image)
-- [📽️ Generative AI Video](#video)
-- [🎶 Generative AI Audio](#audio)
-- [🎒 Other AI Tools](#other)
-- [👩‍🏫 Learning resources](#learning-resources)
-
-
 ## Recommended reading
 
 - [How Large Language Models Will Transform Science, Society, and AI](https://hai.stanford.edu/news/how-large-language-models-will-transform-science-society-and-ai) - Article summarizing the capabilities and limitations of the GPT-3 model, and its potential impact on society. By Alex Tamkin and Deep Ganguli, February 5, 2021.
