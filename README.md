@@ -67,6 +67,7 @@ Welcome to Awesome AI Tools! Dive into my curated list of AI list, featuring top
 
 - [privateGPT](https://github.com/imartinez/privateGPT) - Ask questions to your documents without an internet connection, using the power of LLMs.
 - [quivr](https://github.com/StanGirard/quivr) - Dump all your files and chat with it using your generative AI second brain using LLMs & embeddings.
+- [AiMatch.pro](https://aimatch.pro) - Search and showcase AI tools in one hub—gain a dofollow backlink, 500+ niche visitors/mo, and a trust-boosting badge.
 
 ### Writing assistants
 
@@ -641,6 +642,7 @@ Welcome to Awesome AI Tools! Dive into my curated list of AI list, featuring top
 
 - [Reddit](https://www.reddit.com/r/ChatGPT/)
 - [Discord](https://discord.com/invite/openai)
+- 
 
 ## Related lists
 
