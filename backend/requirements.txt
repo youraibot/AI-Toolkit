@@ -1,0 +1,15 @@
+Flask
+Flask-SQLAlchemy
+Flask-Cors
+python-dotenv
+Flask-Migrate
+psycopg2-binary
+# Main ML Libraries
+transformers
+torch
+accelerate
+# Evaluation Libraries
+evaluate
+scikit-learn
+# Other
+huggingface_hub

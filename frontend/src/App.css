@@ -1,0 +1,734 @@
+/* General App Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #1a1a1a; /* Dark background */
+  color: #f0f0f0; /* Light text */
+}
+
+/* Header */
+.App-header {
+  background-color: #242424;
+  padding: 0 2rem;
+  border-bottom: 1px solid #333;
+  height: 60px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header-content .logo h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #9370DB; /* Changed to Medium Purple */
+}
+
+.header-content a {
+  color: #f0f0f0;
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: color 0.2s;
+}
+
+.header-content a:hover {
+  color: #61dafb;
+}
+
+.header-content nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-content .user-info {
+  color: #aaa;
+  font-size: 0.9rem;
+  border-left: 1px solid #444;
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+/* Main Content */
+.App-main {
+  flex-grow: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* General UI Elements */
+h2 {
+  color: #61dafb;
+  border-bottom: 2px solid #61dafb;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #61dafb;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #88e1fc;
+}
+
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #242424;
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #242424;
+  color: #f0f0f0;
+  font-size: 1rem;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.error-message {
+  color: #ff6b6b;
+  background-color: rgba(255, 107, 107, 0.1);
+  border: 1px solid #ff6b6b;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.loading-message {
+  color: #61dafb;
+}
+
+/* Specific Component Styles */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.model-management, .chat-interface {
+  background-color: #242424;
+  border-radius: 8px;
+  border: 1px solid #333;
+  display: flex;
+  height: calc(100vh - 220px); /* Adjust height as needed */
+}
+
+.conversation-sidebar {
+  width: 250px;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+}
+
+.new-chat-button {
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.new-chat-button button {
+  width: 100%;
+}
+
+.conversation-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.conversation-list-item {
+  padding: 1rem;
+  cursor: pointer;
+  border-bottom: 1px solid #333;
+  transition: background-color 0.2s;
+}
+
+.conversation-list-item:hover {
+  background-color: #333;
+}
+
+.conversation-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.delete-conv-button {
+  background: none;
+  border: none;
+  color: #aaa;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-conv-button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.conversation-list-item.selected {
+  background-color: #1877f2;
+  color: white;
+}
+
+.chat-window {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.model-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.model-list-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.model-list-item:last-child {
+  border-bottom: none;
+}
+
+.model-list-item:hover {
+  background-color: #333;
+}
+
+.model-list-item.selected {
+  background-color: #61dafb;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.download-form {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.search-bar {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.chat-history {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #333;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: #1a1a1a;
+}
+
+.chat-message {
+  margin-bottom: 1rem;
+}
+
+.chat-message.user {
+  text-align: right;
+}
+
+.chat-message .message-bubble {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  max-width: 80%;
+}
+
+.chat-message.user .message-bubble {
+  background-color: #61dafb;
+  color: #1a1a1a;
+}
+
+.chat-message.bot .message-bubble {
+  background-color: #333;
+}
+
+/* Auth Page Styles */
+.auth-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.auth-form {
+  background-color: #242424;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.auth-form h2 {
+  margin-top: 0;
+}
+
+.auth-form input {
+  margin-bottom: 1rem;
+}
+
+.auth-form p {
+  margin-top: 1.5rem;
+}
+
+.auth-form a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.auth-form a:hover {
+  text-decoration: underline;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #333;
+}
+
+.logout-button {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+.logout-button:hover {
+  background-color: #555;
+}
+
+/* Training Dashboard Styles */
+.training-dashboard {
+  background-color: #242424;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-top: 2rem;
+}
+
+.start-job-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.start-job-form-grid button {
+  grid-column: 1 / -1; /* Make button span full width */
+}
+
+.jobs-and-logs-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.job-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 350px;
+  overflow-y: auto;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+.job-list li {
+  padding: 0.75rem;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.job-list li:last-child {
+  border-bottom: none;
+}
+
+.job-list li:hover {
+  background-color: #333;
+}
+
+.job-list li.selected {
+  background-color: #61dafb;
+  color: #1a1a1a;
+  font-weight: bold;
+}
+
+.job-logs {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 4px;
+  height: 350px;
+  overflow-y: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+}
+
+.job-logs pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.dataset-management-section {
+  margin-top: 2rem;
+  border-top: 1px solid #333;
+  padding-top: 1.5rem;
+}
+
+.dataset-management-section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.dataset-management-section li {
+  background-color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+/* Analytics Scorecard Styles */
+.scorecard-container {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.scorecard {
+  background-color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  flex-grow: 1;
+  max-width: 200px;
+}
+
+.scorecard h5 {
+  margin: 0 0 0.5rem 0;
+  color: #aaa;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.scorecard p {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* User Management Styles */
+.user-management {
+  background-color: #242424;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-top: 2rem;
+}
+
+.user-management table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-management th, .user-management td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #333;
+}
+
+.user-management th {
+  color: #61dafb;
+}
+
+.user-management select {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+}
+
+.user-management .delete-button {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+.user-management .delete-button:hover {
+  background-color: #e05252;
+}
+
+.user-management .delete-button:disabled {
+  background-color: #555;
+}
+
+/* --- Light Theme --- */
+.App.light {
+  background-color: #f0f2f5;
+  color: #1c1e21;
+}
+
+.App.light .App-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.App.light .header-content .logo h1,
+.App.light .header-content a:hover,
+.App.light h2 {
+  color: #1877f2; /* A blue for the light theme */
+}
+
+.App.light .header-content a {
+  color: #444;
+}
+
+.App.light .header-content .user-info {
+  color: #666;
+  border-left: 1px solid #ddd;
+}
+
+.App.light .model-management,
+.App.light .chat-interface,
+.App.light .training-dashboard,
+.App.light .user-management,
+.App.light .auth-form {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.App.light input,
+.App.light textarea,
+.App.light select {
+  background-color: #f0f2f5;
+  border: 1px solid #ccc;
+  color: #1c1e21;
+}
+
+.App.light .model-list-item:hover {
+  background-color: #f0f2f5;
+}
+
+.App.light .model-list-item.selected {
+  background-color: #1877f2;
+  color: white;
+}
+
+.App.light .chat-history {
+  background-color: #f0f2f5;
+  border: 1px solid #ddd;
+}
+
+/* Code Health Page Styles */
+.health-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  height: calc(100vh - 120px); /* Full height minus header */
+}
+
+.error-list-container, .error-details-container {
+  background-color: #242424;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.error-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.error-list li {
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.error-list li:hover {
+  background-color: #333;
+}
+
+.error-list li.selected {
+  background-color: #c23b22; /* A reddish color for errors */
+  color: white;
+}
+
+.error-list li span {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-top: 0.25rem;
+}
+.error-list li small {
+  display: block;
+  font-size: 0.8rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.analysis-text {
+  white-space: pre-wrap;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.traceback-box {
+  white-space: pre-wrap;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 4px;
+  max-height: 400px;
+  overflow: auto;
+  font-size: 0.85rem;
+}
+
+.App.light .error-list-container,
+.App.light .error-details-container {
+  background-color: #fff;
+  border-color: #ddd;
+}
+
+.App.light .error-list li.selected {
+  background-color: #e05252;
+}
+
+.App.light .analysis-text,
+.App.light .traceback-box {
+  background-color: #f0f2f5;
+  border: 1px solid #ddd;
+}
+
+.App.light .chat-message.bot .message-bubble {
+  background-color: #e4e6eb;
+  color: #1c1e21;
+}
+
+.App.light .chat-message.user .message-bubble {
+  background-color: #1877f2;
+  color: white;
+}
+
+.App.light .scorecard {
+  background-color: #e4e6eb;
+}
+
+.App.light .scorecard p {
+  color: #1c1e21;
+}
+
+/* Settings Page Styles */
+.settings-page {
+  max-width: 800px;
+}
+
+.settings-section {
+  background-color: #242424;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #333;
+  margin-top: 2rem;
+}
+
+.settings-section h3 {
+  margin-top: 0;
+  color: #61dafb;
+}
+
+.settings-section form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.settings-section form button {
+  margin-top: 1.5rem;
+}
+
+.App.light .settings-section {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.App.light .settings-section h3 {
+  color: #1877f2;
+}
+
+.config-item {
+  margin-top: 1rem;
+}
+
+.config-item strong {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #aaa;
+}
+
+.config-item code {
+  background-color: #1a1a1a;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.App.light .config-item code {
+  background-color: #f0f2f5;
+  border: 1px solid #ddd;
+}
