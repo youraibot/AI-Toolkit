@@ -381,6 +381,7 @@ Welcome to Awesome AI Tools! Dive into my curated list of AI list, featuring top
 
 ### Chrome Extensions
 - [Chrome extension to access ChatGPT as a popup on any page](https://github.com/kazuki-sf/ChatGPT_Extension)
+- [Resemble AI Deepfake Detector](https://chromewebstore.google.com/detail/resemble-ai-deepfake-dete/ligejojghpehckjpfldljdcckgcbngle) - Chrome extension for scanning web images, videos, and audio for AI-generated or manipulated media.
 - [Extension to display ChatGPT response alongside Google Search results](https://github.com/wong2/chat-gpt-google-extension)
 - [Extension to add share abilities to ChatGPT (PDF, PNG or a sharable link](https://github.com/liady/ChatGPT-pdf))
 - [Chrome extension to add input history, copy, and counters to ChatGPT](https://chrome.google.com/webstore/detail/superpower-chatgpt/amhmeenmapldpjdedekalnfifgnpfnkc)
@@ -646,7 +647,6 @@ Welcome to Awesome AI Tools! Dive into my curated list of AI list, featuring top
 
 - [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts) - Prompt curation.
 - [awesome-whisper](https://github.com/sindresorhus/awesome-whisper) - Whisper is an AI-powered speech recognition system.
-
 
 
 
