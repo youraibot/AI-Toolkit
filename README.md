@@ -273,6 +273,7 @@ Welcome to Awesome AI Tools! Dive into my curated list of AI list, featuring top
 - [Colossyan](https://www.colossyan.com/) - Learning & Development focused video creator. Use AI avatars to create educational videos in multiple languages.
 - [Fliki](https://fliki.ai/) - Create text to video and text to speech content with ai powered voices in minutes.
 - [Pictory](https://pictory.ai/) - Pictory's powerful AI enables you to create and edit professional quality videos using text.
+- [videos.social](https://videos.social/?utm_source=youraibot-ai-toolkit&utm_medium=directory&utm_campaign=listing-wave-d) - Turn blogs, PDFs, and prompts into editable faceless videos. Start free — 1 render included.
 - [Pika](https://pika.art/) - An idea-to-video platform that brings your creativity to motion.
 
 ### Animation
